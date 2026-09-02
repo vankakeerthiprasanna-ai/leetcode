@@ -1,20 +1,23 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        r = 0
-        sign = 1
+        rev = 0
 
         if x < 0:
-            sign = -1
             x = -x
+            sign = -1
+        else:
+            sign = 1
+
+        n = x
 
         while x > 0:
-            d = x % 10
-            r = r * 10 + d
+            r = x % 10
+            rev = rev * 10 + r
             x //= 10
 
-        r = r * sign
+        rev = rev * sign
 
-        if r < -2**31 or r > 2**31 - 1:
+        if -(2**31) <= rev <= (2**31) - 1:
+            return rev
+        else:
             return 0
-
-        return r
