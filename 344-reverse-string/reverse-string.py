@@ -1,4 +1,3 @@
 class Solution:
-    def reverseString(self, s: List[str]) -> None:
-       return s.reverse()
-        
+    def reverseString(self, s: list[str]) -> None:
+        return s.reverse()
