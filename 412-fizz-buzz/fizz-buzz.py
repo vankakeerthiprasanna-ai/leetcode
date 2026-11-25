@@ -7,7 +7,7 @@ class Solution:
             elif i%3==0:
                 l.append("Fizz")
             elif i%5==0:
-                l.append("Buzz")
+                l.append("Buzz")   
             else:
-                l.append(str(i))
-        return l
+                l.append(str(i))     
+        return(l)
